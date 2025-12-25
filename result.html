@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendation - TravelAI</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="result">
+
+    <!-- Navigation -->
+    <nav class="container" style="padding: 1.5rem 2rem; display: flex; justify-content: space-between; align-items: center;">
+        <h3 class="gradient-text" style="font-size: 1.5rem; font-weight: 800;">TravelAI</h3>
+    </nav>
+
+    <main class="container" style="text-align: center; min-height: 80vh; display: flex; align-items: center; justify-content: center;">
+        
+        <div class="glass-card fade-in" style="width: 100%; max-width: 600px; padding: 3rem 2rem;">
+            
+            <!-- Label -->
+            <p style="text-transform: uppercase; letter-spacing: 3px; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
+                Top Recommendation
+            </p>
+            
+            <!-- Result Big Text -->
+            <h1 id="result-text" class="gradient-text" style="font-size: 4rem; margin-bottom: 2rem; text-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);">
+                --
+            </h1>
+            
+            <!-- Confidence Bar -->
+            <div style="background: rgba(255,255,255,0.1); height: 8px; border-radius: 10px; overflow: hidden; margin: 0 auto 1rem auto; width: 80%;">
+                <div id="progress-bar" style="width: 0%; height: 100%; background: linear-gradient(90deg, var(--primary), var(--secondary)); transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);"></div>
+            </div>
+            
+            <p id="confidence-text" style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 3rem;">
+                Calculating confidence...
+            </p>
+
+            <!-- Buttons -->
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="predict.html" class="btn">Analyze Another</a>
+                <a href="index.html" class="btn" style="background: transparent; border: 1px solid rgba(255,255,255,0.2);">Home</a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="assets/utils.js"></script>
+    <script src="assets/animations.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+</html>

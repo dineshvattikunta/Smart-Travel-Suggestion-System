@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelAI | Smart Recommendations</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="home">
+    
+    <!-- Navigation -->
+    <nav class="container" style="padding: 1.5rem 2rem; display: flex; justify-content: space-between; align-items: center;">
+        <h3 class="gradient-text" style="font-size: 1.5rem; font-weight: 800;">TravelAI</h3>
+        <div style="font-size: 0.9rem; color: var(--text-muted);">v1.0</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="container" style="text-align: center; padding-top: 4rem; min-height: 80vh; display: flex; flex-direction: column; align-items: center;">
+        
+        <div class="fade-in">
+            <h1 style="margin-bottom: 1.5rem;">
+                Find Your Perfect <br>
+                <span class="gradient-text">Next Destination</span>
+            </h1>
+            
+            <p style="color: var(--text-muted); font-size: 1.2rem; max-width: 600px; margin: 0 auto 3rem auto; line-height: 1.6;">
+                Powered by advanced Machine Learning, we analyze thousands of data points to suggest the ideal trip type tailored just for you.
+            </p>
+            
+            <a href="predict.html" class="btn">Start Prediction</a>
+        </div>
+
+        <!-- Feature Cards -->
+        <div class="fade-in" style="animation-delay: 0.2s; margin-top: 5rem; width: 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+            
+            <div class="glass-card" style="margin: 0; padding: 2rem; text-align: left;">
+                <div style="font-size: 2rem; margin-bottom: 1rem;">🚀</div>
+                <h3 style="margin-bottom: 0.5rem;">AI Powered</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">Uses Random Forest algorithms to match your preferences with historical travel data.</p>
+            </div>
+
+            <div class="glass-card" style="margin: 0; padding: 2rem; text-align: left;">
+                <div style="font-size: 2rem; margin-bottom: 1rem;">⚡</div>
+                <h3 style="margin-bottom: 0.5rem;">Instant Results</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">Get personalized recommendations in milliseconds with our optimized inference engine.</p>
+            </div>
+
+            <div class="glass-card" style="margin: 0; padding: 2rem; text-align: left;">
+                <div style="font-size: 2rem; margin-bottom: 1rem;">🎯</div>
+                <h3 style="margin-bottom: 0.5rem;">High Accuracy</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">Trained on a diverse dataset of over 2,000 destinations and user reviews.</p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="assets/animations.js"></script>
+</body>
+</html>
